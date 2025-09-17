@@ -3,6 +3,11 @@
     padding: 0px;
     border: none;
     overflow-x:hidden;
+     font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  
+  font-style: normal;
+  
 }
 .navbar{
 height: 86px;
