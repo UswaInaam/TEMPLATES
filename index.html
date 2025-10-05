@@ -5,109 +5,135 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sumip - Event Agency | Landing Page</title>
-  <link rel="stylesheet" href="style.css" />
+
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
     rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/regular.min.css"
-    integrity="sha512-x3gns+l9p4mIK7vYLOCUoFS2P1gavFvnO9Its8sr0AkUk46bgf9R51D8xeRUwCSk+W93YbXWi19BYzXDNBH5SA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/solid.min.css"
-    integrity="sha512-EHa6vH03/Ty92WahM0/tet1Qicl76zihDCkBnFhN3kFGQkC+mc86d7V+6y2ypiLbk3h0beZAGdUpzfMcb06cMg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/all.min.js"
-    integrity="sha512-6BTOlkauINO65nLhXhthZMtepgJSghyimIalb+crKRPhvhmsCdnIuGcVbR5/aQY2A+260iC1OPy1oCdB6pSSwQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
 
 <body>
-  <div class="navbar">
-    <div class="logo">
-      <span class="sumip">Sumip</span>
-    </div>
-    <div class="content">
-      <ul class="main-nav">
-        <li class="nav-links">Home</li>
-        <li class="nav-links">
-          <select class="dropdown">
-            <option value="Event Planning">Event Planning</option>
-            <option value="Wedding Planning">Wedding Planning</option>
-          </select>
-        </li>
-        <li class="nav-links">
-          <select class="dropdown d2">
-            <option value="Event Planning">Summer Parties</option>
-            <option value="Wedding Planning">Farewell Parties</option>
-          </select>
-        </li>
-        <li class="nav-links">pricing</li>
-        <li class="nav-links">FAQ's</li>
-      </ul>
-    </div>
-    <div class="buttons">
-      <button class="nav-button" type="button">
-        <i class="fa-solid fa-earth-asia"></i>English
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-light py-3">
+    <div class="container">
+      <a class="navbar-brand fw-bold fs-3" href="#">Sumip</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
       </button>
-      <button class="nav-button btn-black" type="button">Register</button>
+
+      <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+        <ul class="navbar-nav mx-auto align-items-center">
+          <li class="nav-item mx-2"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item mx-2">
+            <select class="form-select form-select-sm rounded-pill">
+              <option>Event Planning</option>
+              <option>Wedding Planning</option>
+            </select>
+          </li>
+          <li class="nav-item mx-2">
+            <select class="form-select form-select-sm rounded-pill">
+              <option>Summer Parties</option>
+              <option>Farewell Parties</option>
+            </select>
+          </li>
+          <li class="nav-item mx-2"><a class="nav-link" href="#">Pricing</a></li>
+          <li class="nav-item mx-2"><a class="nav-link" href="#">FAQ's</a></li>
+        </ul>
+
+        <div class="d-flex">
+          <button class="btn btn-outline-dark me-2 rounded-pill">
+            <i class="fa-solid fa-earth-asia"></i> English
+          </button>
+          <button class="btn btn-dark rounded-pill">Register</button>
+        </div>
+      </div>
     </div>
-  </div>
-  <div class="hero">
-    <div class="center">
-      <div class="features justify-center margin-top">
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero d-flex align-items-center text-center py-5">
+    <div class="container">
+      <div class="d-inline-block bg-light px-4 py-2 rounded-pill mb-3">
         <i class="fa-solid fa-ice-cream"></i>
-        <i class="fa-solid fa-arrow-right"></i>
-
-        <span class="bold">Brightness-Dreams!!</span>
-
-        <!-- <i class="fa-solid fa-arrow-right"></i> -->
-        <!-- <i class="fa-solid fa-candy-cane"></i> -->
-
+        <span class="fw-bold">Brightness-Dreams!!</span>
         <i class="fa-solid fa-magnifying-glass"></i>
       </div>
-      <div class="heading justify-center margin-top">
-        <h1><span class="upper-center">Radient Revelries,</span><br /></h1>
 
-      </div>
-      <div class="heading heading1">
-        <h1><span class="upper-center">Sparkle Summer Parties</span><br /></h1>
-      </div>
-      <div class="subtext justify-center margin-top upper-center">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quidem
-        autem<br /> aliquid, deserunt praesentium, deleniti accusantium vitae,
-        voluptas nulla fugit
-      </div>
-      <button class="nav-button btn-black center-button margin-top">
-        Get Started
-        <i class=" arrow fa-solid fa-arrow-right"></i>
+      <h1 class="fw-bold display-5">Radiant Revelries,</h1>
+      <h1 class="fw-bold display-6 mb-3">Sparkle Summer Parties</h1>
+
+      <p class="text-muted mb-4">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quidem autem aliquid, deserunt praesentium,
+        deleniti accusantium vitae, voluptas nulla fugit.
+      </p>
+
+      <button class="btn btn-dark rounded-pill px-4 py-2">
+        Get Started <i class="fa-solid fa-arrow-right ms-1"></i>
       </button>
-      <div class="subtext2 subtext justify-center margin-top upper-center">
-        <i class="fa-solid fa-triangle-exclamation"></i>
-        Pause or cancel service anytime
-      </div>
 
+      <p class="text-muted mt-3 small">
+        <i class="fa-solid fa-triangle-exclamation"></i> Pause or cancel service anytime
+      </p>
+    </div>
+  </section>
+
+  <!-- Icon Row -->
+  <div class="container text-center my-4">
+    <div class="d-flex flex-wrap justify-content-center gap-4">
+      <i class="fa-solid fa-candy-cane fs-4"></i>
+      <i class="fa-solid fa-triangle-exclamation fs-4"></i>
+      <i class="fa-solid fa-magnifying-glass fs-4"></i>
+      <i class="fa-solid fa-candy-cane fs-4"></i>
+      <i class="fa-solid fa-triangle-exclamation fs-4"></i>
+      <i class="fa-solid fa-magnifying-glass fs-4"></i>
     </div>
   </div>
-  <div class="icons">
-    <i class=" icon1 fa-solid fa-candy-cane"></i>
-    <i class=" icon1 fa-solid fa-triangle-exclamation"></i>
-    <i class="icon1 fa-solid fa-magnifying-glass"></i>
-     <i class="icon1 fa-solid fa-candy-cane"></i>
-    <i class="icon1 fa-solid fa-triangle-exclamation"></i>
-    <i class="icon1 fa-solid fa-magnifying-glass"></i>
 
+  <!-- Image Gallery -->
+  <div class="container my-5">
+    <div class="row g-2">
+      <div class="col-6 col-md-4 col-lg-3">
+        <img src="images/website pic2.jpg" class="img-fluid rounded-3" alt="">
+      </div>
+      <div class="col-6 col-md-4 col-lg-3">
+        <img src="images/website pic2.jpg" class="img-fluid rounded-3" alt="">
+      </div>
+      <div class="col-6 col-md-4 col-lg-3">
+        <img src="images/website pic2.jpg" class="img-fluid rounded-3" alt="">
+      </div>
+      
+      <div class="col-6 col-md-4 col-lg-3">
+        <img src="images/website pic2.jpg" class="img-fluid rounded-3" alt="">
+      </div>
+      <div class="col-6 col-md-4 col-lg-3">
+        <img src="images/website pic2.jpg" class="img-fluid rounded-3" alt="">
+      </div>
+      <div class="col-6 col-md-4 col-lg-3">
+        <img src="images/website pic2.jpg" class="img-fluid rounded-3" alt="">
+      </div>
+      <div class="col-6 col-md-4 col-lg-3">
+        <img src="images/website pic2.jpg" class="img-fluid rounded-3" alt="">
+      </div>
+      
+      <div class="col-6 col-md-4 col-lg-3">
+        <img src="images/website pic2.jpg" class="img-fluid rounded-3" alt="">
+      </div>
+     
+    </div>
+  </div>
 
-  </div>
-   <div class="images">
-<img class="image1" src="images/website pic2.jpg" alt="picture not found">
- <img class="image1" src="images/website pic2.jpg" alt="picture not found">
-<img class="image1" src="images/website pic3.png" alt="picture not found">
-<img class="image1" src="images/website pic2.jpg" alt="picture not found">
-<img class="image1" src="images/website pic3.png" alt="picture not found">
-<img class="image1" src="images/website pic2.jpg" alt="picture not found">
-  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
